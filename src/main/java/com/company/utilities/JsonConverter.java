@@ -30,4 +30,7 @@ public class JsonConverter {
             return null;
         }
     }
+    public <T> String getJsonFromClass                                           (Class <T> resultClass, Object object){
+        return gson.toJson(object,resultClass);
+    }
 }
